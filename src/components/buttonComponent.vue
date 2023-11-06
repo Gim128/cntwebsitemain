@@ -8,12 +8,14 @@
             dark
             v-bind="attrs"
             v-on="on"
+            type="button"
+            style="min-width: 134px; height: 36px; padding: 0 6px;"
           >
             
             {{ $t("msgsxtthree") }}
           </v-btn>
         </template>
-        <v-list data-app>
+        <v-list data-app class="list">
           <v-list-item data-app
           @click="changelg(item.locale)"
             v-for="(item, index) in items"
@@ -47,5 +49,11 @@ export default {
 </script>
 
 <style>
-
+  .list{
+    min-width: 116px;
+    top: 36px;
+    left: 0px;
+    transform-origin: left top;
+    z-index: 101;
+  }
 </style>

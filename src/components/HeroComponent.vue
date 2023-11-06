@@ -23,7 +23,7 @@
                 >
                   <img src="../assets/android.png" alt="Image 1" class="w-10 h-10 mb-3" />
                   <a
-                    href="https://tronscan.org/#/token20/TX8yuS4sRtbSXJVtjsmR7pSDQDrioWopKS"
+                    href="https://oss.icanlk.com/android/CNTPAY/cntpay.apk"
                     target="_blank"
                     class="inline-block px-1 py-3 text-lg font-semibold text-indigo-700 transition hover:text-indigo-700 focus:outline-none focus:ring focus:ring-indigo-500"
                   >
@@ -36,7 +36,7 @@
                 >
                   <img src="../assets/ios.png" alt="Image 2" class="w-10 h-10 mb-3" />
                   <a
-                    href="https://cntpay.ogzlbnq.com/9rizw"
+                    href="https://c2c.cntpay.net/"
                     target="_blank"
                     class="inline-block px-1 py-3 text-lg font-semibold text-indigo-700 transition hover:text-indigo-700 focus:outline-none focus:ring focus:ring-indigo-500"
                   >
@@ -49,7 +49,7 @@
                 >
                   <img src="../assets/browser.png" alt="Image 3" class="w-10 h-10 mb-3" />
                   <a
-                    href="https://c2c.cntpay.net/"
+                    href="https://cntpay.ogzlbnq.com/9rizw"
                     target="_blank"
                     class="inline-block px-1 py-3 text-lg font-semibold text-indigo-700 transition border-indigo-900 rounded hover:hover:bg-slate-200 hover:text-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
                   >
