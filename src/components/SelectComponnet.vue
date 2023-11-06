@@ -103,7 +103,7 @@
         </p>
       </div>
     </div>
-    <div>
+    <!-- <div>
       <section
         v-if="isActiveOne"
         class="grid grid-cols-4 mt-8 ml-6 mr-4 rounded"
@@ -145,7 +145,38 @@
           height="500"
         />
       </section>
-    </div>
+    </div> -->
+
+    <v-row class="imageRow">
+      <v-col
+        cols="6"
+        sm="4"
+      >
+        <v-img
+          src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
+          gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+        ></v-img>
+      </v-col>
+  
+      <v-col
+        cols="6"
+        sm="4"
+      >
+        <v-img src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg">
+          <div class="fill-height bottom-gradient"></div>
+        </v-img>
+      </v-col>
+  
+      <v-col
+        cols="6"
+        sm="4"
+      >
+        <v-img src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg">
+          <div class="fill-height repeating-gradient"></div>
+        </v-img>
+      </v-col>
+    </v-row>
+    
   </div>
 </template>
 
@@ -154,8 +185,8 @@ export default {
   name: "SelectComponent",
   data() {
     return {
-      isActiveOne: false,
-      isActiveTwo: true,
+      isActiveOne: true,
+      isActiveTwo: false,
       isActiveThree: false,
 
       webApps: [
@@ -179,8 +210,7 @@ export default {
           image:
             "https://images.livemint.com/img/2021/11/12/1600x900/CDX_1636721722418_1636721729590.jpg",
         },
-        // {title: 'Web App 1', image:'https://img.freepik.com/free-photo/rows-stacks-cryptocurrency-coins-wooden-table_211682-66.jpg?w=1380&t=st=1671706102~exp=1671706702~hmac=2fb657acde425fc99a2c9d879a122569aede6645427a3c085dda7e643e14f652'},
-        // {title: 'Web App 1', image:'https://img.freepik.com/free-photo/beautiful-cryptocurrency-hologram-design_23-2149250206.jpg?w=1380&t=st=1671706163~exp=1671706763~hmac=b0119c9b1c9ea2bab93a0badfd2352105d860ebaecc1bd0261b5c8d4d2b4bc52'},
+        
        
       ],
 
@@ -200,23 +230,10 @@ export default {
           image:
             "https://images.assettype.com/fortuneindia%2F2022-02%2Fd0057f5d-302b-4789-b2c1-033f9a69e8b7%2FCrypto_1235570383_copy.jpg?rect=0,86,2047,1151&w=1250&q=60",
         },
-        {
-          title: "crypto1",
-          image:
-            "https://media.philstar.com/photos/2022/09/26/pdax-lead_2022-09-26_13-36-19.jpg",
-        },
-        // {title: 'crypto1', image:'https://img.freepik.com/free-photo/flat-lay-business-concept_53876-24738.jpg?w=1380&t=st=1671706546~exp=1671707146~hmac=8e5c2df618feb767e9df93dc4249a3fd7886349e66c17e2c35c4c5eb6cbbd3e8'},
-        // {title: 'crypto1', image:'https://img.freepik.com/free-photo/group-people-working-website-template_53876-25068.jpg?w=1380&t=st=1671706563~exp=1671707163~hmac=ea45529b1c6b9cfd21793d196627c1aa8957440974b968a0400385edd45cc329'},
-        // {title: 'crypto1', image:'https://img.freepik.com/free-photo/hands-holding-smartphone-close-up_23-2149168656.jpg?w=1380&t=st=1671706579~exp=1671707179~hmac=9a5ac987c0b025f5083cc22ec706e687ff65823c8f4581cd78b349d81093e4aa'},
-        // {title: 'crypto1', image:'https://img.freepik.com/free-photo/close-up-hand-holding-smartphone_23-2149153407.jpg?w=1380&t=st=1671773327~exp=1671773927~hmac=b81d1944d3d298501223d6c3035076914c1b2e3915c22444e251fe70f11d76eb'},
+  
       ],
 
       coinApps: [
-        {
-          title: "coin03",
-          image:
-            "https://techstory.in/wp-content/uploads/2022/03/top-10-cryptocurrencies-to-Invest-2022--768x512.jpg",
-        },
         {
           title: "coin03",
           image:
@@ -228,10 +245,7 @@ export default {
             "https://img.freepik.com/premium-photo/bitcoin-cryptocurrency-investing-concept-3d-rendering_350912-16.jpg",
         },
         {title: 'coin03', image:'https://www.cyberlink.com/prog/faceme/html/507/p/enu/img/banner_cryptocurrency.jpg'},
-        // {title: 'coin03', image:'https://img.freepik.com/free-photo/ai-technology-microchip-background-digital-transformation-concept_53876-124669.jpg?w=1380&t=st=1671773092~exp=1671773692~hmac=dc7a14215cc167a923d1fee791e668ed1ab0104c6e75ac204ff952bb9f12148c'},
-        // {title: 'coin03', image:'https://img.freepik.com/free-photo/man-wearing-smart-glasses-touching-virtual-screen-futuristic-technology-digital-remix_53876-104247.jpg?w=1380&t=st=1671773141~exp=1671773741~hmac=9f69f61292aec470c17401484cce8e88ea2bca58a0721fbcb5732133aaf2c8c2'},
-        // {title: 'coin03', image:'https://img.freepik.com/free-photo/hologram-projector-screen-with-cloud-system-technology_53876-108502.jpg?w=1380&t=st=1671773186~exp=1671773786~hmac=0749fc624fe9582cc480dd27b96a8b6555b5bc7221c76145283c40904ce8d600'},
-        // {title: 'coin03', image:'https://img.freepik.com/free-photo/rendering-abstract-futuristic-background-with-glowing-neon-blue-orange-lights_181624-19807.jpg?w=1380&t=st=1671773206~exp=1671773806~hmac=70c44b9fe48a45f4a8b51fb5284bf3491733bf63af5d691c1652f684ec2136d8'},
+        
       ],
     };
   },
@@ -258,5 +272,24 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+
+  .imageRow{
+    margin-top: 8px;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+  .bottom-gradient {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 72px);
+  }
+
+  .repeating-gradient {
+    background-image: repeating-linear-gradient(-45deg,
+                        rgba(255,0,0,.25),
+                        rgba(255,0,0,.25) 5px,
+                        rgba(0,0,255,.25) 5px,
+                        rgba(0,0,255,.25) 10px
+                      );
+  }
 </style>
+

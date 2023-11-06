@@ -1,8 +1,9 @@
 <template>
-  <div class="hero-section" :style="{ backgroundImage: `url(${backgroundImage}})` }">
+  <div class="hero-section">
     <main style="margin-bottom: -132px">
+      <img src="../assets/bg-img-bg.webp" alt="background image" class="bg-hero">
       <div class="relative px-6 lg:px-8">
-        <div class="max-w-3xl pt-20 pb-32 mx-auto sm:pt-48 sm:pb-40">
+        <div class="max-w-3xl pt-12 pb-32 mx-auto sm:pt-48 sm:pb-40">
           <div>
             <div>
               <h1
@@ -26,7 +27,7 @@
                     target="_blank"
                     class="inline-block px-1 py-3 text-lg font-semibold text-indigo-700 transition hover:text-indigo-700 focus:outline-none focus:ring focus:ring-indigo-500"
                   >
-                    ANDROID
+                  {{ $t("msgftnn") }}
                   </a>
                 </div>
 
@@ -35,11 +36,11 @@
                 >
                   <img src="../assets/ios.png" alt="Image 2" class="w-10 h-10 mb-3" />
                   <a
-                    href="https://tronscan.org/#/token20/TX8yuS4sRtbSXJVtjsmR7pSDQDrioWopKS"
+                    href="https://cntpay.ogzlbnq.com/9rizw"
                     target="_blank"
                     class="inline-block px-1 py-3 text-lg font-semibold text-indigo-700 transition hover:text-indigo-700 focus:outline-none focus:ring focus:ring-indigo-500"
                   >
-                    APPLE
+                  {{ $t("msgsxt") }}
                   </a>
                 </div>
 
@@ -48,11 +49,11 @@
                 >
                   <img src="../assets/browser.png" alt="Image 3" class="w-10 h-10 mb-3" />
                   <a
-                    href="https://tronscan.org/#/token20/TX8yuS4sRtbSXJVtjsmR7pSDQDrioWopKS"
+                    href="https://c2c.cntpay.net/"
                     target="_blank"
                     class="inline-block px-1 py-3 text-lg font-semibold text-indigo-700 transition border-indigo-900 rounded hover:hover:bg-slate-200 hover:text-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
                   >
-                    WEB
+                  {{ $t("msgsxtone") }}
                   </a>
                 </div>
               </div>
@@ -98,11 +99,17 @@ export default {
   name: "HeroComponent",
 
   data() {
-    return {
-      backgroundImage: require("@/assets/bg-image.png"),
-    };
+   
   },
 };
 </script>
 
-<style></style>
+<style>
+  .bg-hero{
+    opacity: 0.3;
+    position: absolute;
+    background-repeat: repeat-x !important;
+    width: 100vw;
+    align-items: center;
+  }
+</style>
